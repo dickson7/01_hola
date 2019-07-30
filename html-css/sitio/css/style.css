@@ -5,7 +5,9 @@ html, body{
     font-family: Helvetica, sans-serif;
     
 }
-
+hr{
+    opacity: 0.2;
+}
 
 /* ******* Nav *********** */
 
@@ -46,7 +48,7 @@ nav li a:hover{
 
 .products{
     background-image: url("../img/curve.png");
-    max-height: 50px;
+    height: 50px;
     background-size: cover;
     background-position: center top;
     padding: 15%;
@@ -95,4 +97,39 @@ nav li a:hover{
 }
 .benefit .content img{
 max-height: 100px;    
+}
+
+
+/* ******* menciones section *********** */
+
+.mention-title{
+    text-align: center;
+    padding-top: 25px; 
+}
+
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+.mention{
+    padding: 10px;
+}
+.mention .content{
+    box-shadow: 0 0 1px #c1bcbc;
+
+}
+.mention .content img{
+    width: 100%;
+}
+.mention .content .content-text{
+    padding: 10px;
+}
+
+/* ******* footer *********** */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(35, 37, 37, 0.96);
+    color: white;
+    padding: 0 10px;
 }
