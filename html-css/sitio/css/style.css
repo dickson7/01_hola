@@ -133,3 +133,14 @@ footer{
     color: white;
     padding: 0 10px;
 }
+
+
+/* ******* pagos *********** */
+.pagos{
+    box-shadow: 0 0 1px #c1bcbc;
+    padding: 10px;
+}
+.pagos .pagos-img{
+    max-width: 150px;
+    margin: auto;
+}
