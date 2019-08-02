@@ -45,18 +45,22 @@
         </div>
         <div class="col-8">
             <div class="pagos">
-                    <form action=””>
-                            <label for=”nombre”>Nombre</label>
-                            <input type=”text” id=”nombre” name=”user_name” />
-                          
-                            <label for=“mail“>Mail</label>
-                            <input type=”number” id=”mail” name=”user_mail” />
-
-                            <label for=“phone“>Telefono</label>
-                            <input type=”number” id=”phone” name=”user_phone” />
-                          
-                            <button type=”submit”>Confirmar pago</button>
-                          </form>
+                    <form action=”https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YA6XCH289HNGL” method="POST">
+                        <label for=”nombre”>Nombre</label>
+                        <br>
+                        <input type=”text” id=”nombre” name=”name”/>
+                        <br> 
+                        <label for=“mail“>Mail</label>
+                        <br>
+                        <input type=”number” id=”mail” name=”email”/>
+                        <br>
+                        <label for=“phone“>Telefono</label>
+                        <br>
+                        <input type=”number” id=”phone” name=”phone”/>
+                        <br>
+                        <input type="submit" class="main-button" value="Confirmar pago">
+                        <!-- <button type=”submit” name="submit">Confirmar pago </button> -->
+                    </form>
             </div>
         </div>
     </div>
