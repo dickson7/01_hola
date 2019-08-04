@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1000px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+/*+++++++++++++++ Header +++++++*/
+header{
+    height: 80px;
+    background-color: #141414;
+    display:flex;
+    justify-content: center; 
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding: 20px;
+    position: relative;
+}
+li::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height: 1px;
+    bottom: 10px;
+    left: 10px;
+}
+li:hover::before{
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 90%;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+nav li:hover a{
+    transform: translateY(-2px);
+}
+nav li a:active{
+    transform: translateY(2px);
+}
+
+/*+++++++++++++++ Fin Header +++++++*/
+
+/*+++++++++++++++ Hero +++++++*/
+.hero{
+    background-color: #141414;
+    color: white;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero h1{
+    font-size: 35px;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+    margin: 0;
+}
+.hero strong{
+    color: #005C97;
+}
