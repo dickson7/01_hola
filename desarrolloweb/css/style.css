@@ -6,11 +6,11 @@ body{
 }
 
 section{
-    display: flex;
-    justify-content: center;
+    
 }
 .container{
     width: 1000px;
+    margin: 0 auto;
 }
 figure{
     margin: 0;
@@ -70,6 +70,8 @@ nav li a:active{
 .hero{
     background-color: #141414;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 .hero .container{
     display: flex;
