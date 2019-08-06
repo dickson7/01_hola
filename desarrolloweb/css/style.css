@@ -11,6 +11,8 @@ section{
 .container{
     width: 1000px;
     margin: 0 auto;
+    display: inherit;
+    flex-wrap: inherit;
 }
 figure{
     margin: 0;
@@ -136,12 +138,27 @@ nav li a:active{
     text-transform: uppercase;
     color: #005C97; 
 }
+.eventos {
+    display: flex;
+    flex-wrap: wrap;    
+}
 .event{
     width: 480px;
     background-color: rgb(244, 246, 247);
+    margin: 1%;
+    border-radius: 10px;
 }
 .event figure img{
-    width: 480px;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
 }
-
+.event-details{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
 /*+++++++++++++++ Fin Experiencia +++++++*/
