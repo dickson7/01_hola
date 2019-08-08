@@ -5,14 +5,14 @@ body{
     font-family: sans-serif;
 }
 
-section{
-    
-}
+
 .container{
     width: 1000px;
     margin: 0 auto;
     display: inherit;
     flex-wrap: inherit;
+    justify-content: space-between;
+
 }
 figure{
     margin: 0;
@@ -31,6 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 ul{
@@ -141,6 +142,7 @@ nav li a:active{
 .eventos {
     display: flex;
     flex-wrap: wrap;    
+    margin-bottom: 30px;
 }
 .event{
     width: 480px;
@@ -161,4 +163,74 @@ nav li a:active{
     padding: 20px;
     text-align: center;
 }
+.event-url{
+    text-decoration: none;
+    color: #005C97;
+    border: 1px solid #005C97;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.event-url:hover{
+    background-color: #005C97;
+    color: white;
+}
 /*+++++++++++++++ Fin Experiencia +++++++*/
+
+
+/*+++++++++++++++ Inicio Contacto +++++++*/
+.contacto{
+    background-color: #005C97;
+    color: white;
+    display: flex;
+}
+.contacto .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.form-email input{
+    padding: 10px 10px 10px 25px;
+    border-radius: 5px;
+    background-image: url("../img/envelope.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position-y: center;
+    background-position-x: 5px;
+    width: 200px;
+}
+.form-email button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0px;
+}
+.form-email button:hover{
+    background-color: white;
+    color: #005C97;
+}
+.social a{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+}
+/*+++++++++++++++ Fin Contacto +++++++*/
+
+/*+++++++++++++++ Inicio Footer +++++++*/
+footer{
+    background-color: #1d242b;
+    padding: 5px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+footer .container img{
+    vertical-align: middle;
+}
+footer a{
+    color: white;
+    text-decoration: white;
+}
+/*+++++++++++++++ Fin Footer +++++++*/
