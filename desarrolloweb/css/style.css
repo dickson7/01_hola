@@ -25,6 +25,7 @@ header{
     background-color: #141414;
     display:flex;
     justify-content: center; 
+    flex-wrap: wrap;
 }
 nav{
     color: white;
@@ -32,6 +33,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+
 }
 
 ul{
@@ -110,6 +113,7 @@ nav li a:active{
 .project{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px;
     margin-bottom: 15px;
 }
@@ -183,6 +187,8 @@ nav li a:active{
     background-color: #005C97;
     color: white;
     display: flex;
+    flex-wrap: wrap;
+
 }
 .contacto .container{
     justify-content: space-between;
@@ -225,6 +231,8 @@ footer{
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 footer .container img{
     vertical-align: middle;
