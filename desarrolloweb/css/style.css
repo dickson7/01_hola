@@ -7,12 +7,15 @@ body{
 
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    /*width:100%;*/
+    flex:1;
     margin: 0 auto;
     display: inherit;
     flex-wrap: inherit;
     justify-content: space-between;
-
+    align-items: inherit;
+    padding: 10px;
 }
 figure{
     margin: 0;
@@ -23,16 +26,14 @@ figure{
 header{
     height: 80px;
     background-color: #141414;
-    display:flex;
-    justify-content: center; 
-    flex-wrap: wrap;
+    
 }
 nav{
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: inherit;
     flex-wrap: wrap;
 
 }
@@ -89,6 +90,7 @@ nav li a:active{
     letter-spacing: -1px;
     line-height: 1.5;
     margin: 0;
+    padding: 10px;
 }
 .hero strong{
     color: #005C97;
@@ -103,7 +105,7 @@ nav li a:active{
 .porfolio h2{
     color: #005C97;
     text-transform: uppercase;
-    padding: 20px 0 20px 0;
+    padding: 20px;
 }
 .porfolio article{
     border: 1px solid #141414;
@@ -113,7 +115,6 @@ nav li a:active{
 .project{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px;
     margin-bottom: 15px;
 }
@@ -190,7 +191,7 @@ nav li a:active{
     flex-wrap: wrap;
 
 }
-.contacto .container{
+.contacto{
     justify-content: space-between;
     align-items: center;
 }
