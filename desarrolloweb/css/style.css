@@ -15,7 +15,7 @@ body{
     flex-wrap: inherit;
     justify-content: space-between;
     align-items: inherit;
-    padding: 10px;
+    padding: 0 1em;
 }
 figure{
     margin: 0;
@@ -24,9 +24,9 @@ figure{
 
 /*+++++++++++++++ Header +++++++*/
 header{
-    height: 80px;
+    height: auto;
     background-color: #141414;
-    
+
 }
 nav{
     color: white;
@@ -43,21 +43,21 @@ ul{
     display: flex;
 }
 li{
-    padding: 20px;
+    padding-left: 50px;
     position: relative;
 }
-li::before{
+
+nav a::before{
     content: '';
     position: absolute;
     background-color: white;
     width: 0%;
     height: 1px;
-    bottom: 10px;
-    left: 10px;
+    bottom: -10px;
 }
-li:hover::before{
+nav a:hover::before{
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    width: 90%;
+    width: 100%;
 }
 nav li a{
     text-decoration: none;
@@ -134,6 +134,15 @@ nav li a:active{
 .project-description{
     font-size: 20px;
 }
+.project-image{
+    width:50%;
+}
+.project-image img{
+    width: 100%;
+}
+.project-details{
+    width: 50%;
+}
 /*+++++++++++++++ Fin Porfolio +++++++*/
 
 
@@ -150,7 +159,7 @@ nav li a:active{
     margin-bottom: 30px;
 }
 .event{
-    width: 480px;
+    width: 48%;
     background-color: rgb(244, 246, 247);
     margin: 1%;
     border-radius: 10px;
@@ -161,8 +170,7 @@ nav li a:active{
     border-radius: 10px 10px 0 0;
 }
 .event-details{
-    margin: 20px 40px;
-    margin-top: -40px;
+    margin: -40px 20px 20px 20px;
     background-color: white;
     position: relative;
     padding: 20px;
