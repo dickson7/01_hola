@@ -79,6 +79,7 @@ nav li a:active{
     color: white;
     display: flex;
     justify-content: center;
+    height: auto;
 }
 .hero .container{
     display: flex;
