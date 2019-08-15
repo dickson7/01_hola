@@ -29,7 +29,9 @@
         font-size: 2em;
         
     }
-
+    header h1{
+        text-align: center;
+    }
 
     header{
         display: block;
@@ -39,6 +41,7 @@
     header ul{
         display: block;
         margin: 0;
+        padding: 0;
     }
     header nav{
         display: block;
