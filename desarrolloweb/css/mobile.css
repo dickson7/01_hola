@@ -8,7 +8,7 @@
     }
     .menu{
         position: fixed;
-        background-color:rgba(0, 92, 151, .8);
+        background-color:rgba(0, 92, 151, .85);
         z-index: 3;
         top: 0;
         left: 100vw;
@@ -26,11 +26,12 @@
     header a{
         justify-content: center;
         height: 40px;
-        font-size: 2em;
+        font-size: 1.5em;
         
     }
     header h1{
         text-align: center;
+        font-size: 1.5em;
     }
 
     header{
@@ -137,6 +138,9 @@
     .project-details{
         font-size: 12px;
     }
+    .social{
+        margin-bottom: 20px;
+    }
     .social a{
         padding: 10px;
     }
@@ -145,7 +149,7 @@
         padding: 1em;
     }
     .hero h1{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .hero{
         height: 250px;
