@@ -3,8 +3,32 @@
    
 }
 @media (max-width: 767px){
-    
-
+    .burger-menu {
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        background-color:rgba(0, 92, 151, .8);
+        z-index: 3;
+        top: 0;
+        left: 100vw;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all cubic-bezier(0.23, 1, 0.320, 1);
+    }   
+    .menu.is-active{
+        left: 0;
+    }
+    header a{
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        
+    }
 
 
     header{
