@@ -33,12 +33,46 @@ fetch('https://jsonplaceholder.typicode.com/users')
     const actionList = await getData('https://yts.lt/api/v2/list_movies.json?genre=action')
     const dramaList = await getData('https://yts.lt/api/v2/list_movies.json?genre=drama')
     const animationList = await getData('https://yts.lt/api/v2/list_movies.json?genre=animation')
-    console.log('Acción', actionList, 'Terror', dramaList, 'Animación', animationList);
+    //console.log('Acción', actionList, 'Terror', dramaList, 'Animación', animationList);
 
+    function videoItemTemplate(movie){
+      return(
+        `<div class="primaryPlaylistItem">
+            <div class="primaryPlaylistItem-image">
+              <img src="${movie.medium_cover_image}">
+            </div>
+            <h4 class="primaryPlaylistItem-title">
+              ${movie.title}
+            </h4>
+        </div>`
+      )
+    }
+
+    function createTemplate(HTMLString){
+      const html = document.implementation.createHTMLDocument();
+      html.body.innerHTML = HTMLString;
+      return html.body.children[0];
+    }
+
+    function renderMovieList(list, $container){
+      $container.children[0].remove();
+      list.forEach((movie) =>{
+        const HTMLString = videoItemTemplate(movie);
+        const movieElement = createTemplate(HTMLString); 
+        $container.append(movieElement);
+      })
+    }
+   
     const $actionContainer = document.querySelector('#action');
-    const $dramaContainer = document.getElementById('drama');
-    const $animationContainer = document.getElementById('animation');
+    renderMovieList(actionList.data.movies, $actionContainer);
 
+    const $dramaContainer = document.getElementById('drama');
+    renderMovieList(dramaList.data.movies, $dramaContainer);
+
+    const $animationContainer = document.getElementById('animation');
+    renderMovieList(animationList.data.movies, $animationContainer);
+
+    
     const $featuringContainer = document.getElementById('#featuring');
     const $form = document.getElementById('#form');
     const $home = document.getElementById('#home');
@@ -52,6 +86,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
     const $modalImage = $modal.querySelector('img');
 
 
-
+    
   })()
 
